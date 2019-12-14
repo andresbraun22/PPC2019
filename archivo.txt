@@ -1,0 +1,5 @@
+
+Archivo creado solo con el fin de hacer el primer add . y el primer 
+commit. Esto se realiza para que Git me deje subir a GitHub la rama
+master ya que no se puede hacer $ git push origin master si se encuentra
+vacio 
