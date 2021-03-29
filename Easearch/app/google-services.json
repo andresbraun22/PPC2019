@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "154036154376",
+    "firebase_url": "https://easearchfirebase.firebaseio.com",
+    "project_id": "easearchfirebase",
+    "storage_bucket": "easearchfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154036154376:android:01e44aa87ee493f324a1bd",
+        "android_client_info": {
+          "package_name": "com.e.easearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154036154376-3pr4fvpv37pq7ktokokpif9f7qlp3pih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.easearch",
+            "certificate_hash": "812b83c57882c256d3b86732a03b5da33e71b8a0"
+          }
+        },
+        {
+          "client_id": "154036154376-bbhfilr8g5ne1i6c56fh8ts3cs92eja4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRH-n1S8qHJp25WUK_6PBvAfuPY921MVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154036154376-bbhfilr8g5ne1i6c56fh8ts3cs92eja4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

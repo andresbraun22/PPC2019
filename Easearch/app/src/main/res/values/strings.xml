@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Easearch</string>
+    <string name="datos_incorrectos">ERROR: datos incorrectos</string>
+    <string name="pw_no_coincide">ERROR: las contraseñas no coinciden</string>
+    <string name="campos_vacios">ERROR: no se permiten campos vacíos</string>
+    <string name="reg_ok">Registro exitoso!</string>
+    <string name="ya_reg">ERROR: usuario ya registrado</string>
+    <string name="login_ok">Login exitoso!</string>
+    <string name="requerido">Required</string>
+
+    <string name="resume">RESUME</string>
+    <string name="pause">PAUSE</string>
+
 </resources>
