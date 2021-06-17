@@ -3,6 +3,7 @@ package com.e.easearch.controller;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +15,7 @@ import com.e.easearch.model.User;
 
 import java.util.UUID;
 
-public class RegistrationActivity extends Activity implements View.OnClickListener{
+public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText etName, etSurname, etUserName, etPassword1, etPassword2;
     private Button btnRegister;
@@ -83,15 +84,15 @@ public class RegistrationActivity extends Activity implements View.OnClickListen
         String pw1 = etPassword1.getText().toString();
         String pw2 = etPassword2.getText().toString();
         if(n.equals("")){
-            etName.setError("Required");
+            etName.setError(getResources().getString(R.string.requerido));
         } else if(s.equals("")){
-            etSurname.setError("Required");
+            etSurname.setError(getResources().getString(R.string.requerido));
         } else if(un.equals("")){
-            etUserName.setError("Required");
+            etUserName.setError(getResources().getString(R.string.requerido));
         } else if(pw1.equals("")){
-            etPassword1.setError("Required");
+            etPassword1.setError(getResources().getString(R.string.requerido));
         } else if(pw2.equals("")){
-            etPassword2.setError("Required");
+            etPassword2.setError(getResources().getString(R.string.requerido));
         }
     }
 

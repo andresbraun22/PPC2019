@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +14,7 @@ import com.e.easearch.R;
 import com.e.easearch.dao.UserDAO;
 import com.e.easearch.model.User;
 
-public class LoginActivity extends Activity implements View.OnClickListener{
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText etUsername, etPassword;
     private Button btnLogin, btnReg;
@@ -38,10 +39,11 @@ public class LoginActivity extends Activity implements View.OnClickListener{
         btnReg.setOnClickListener(this);
 
         pref = getSharedPreferences("user_details", Context.MODE_PRIVATE);
+
         intent = new Intent(this,PanelActivity.class);
         if(pref.contains("username") && pref.contains("password")){
-            //startActivity(intent);
-            //finish();
+            startActivity(intent);
+            finish();
         }
 
     }
@@ -59,8 +61,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
                 if (username.equals("") || password.equals("")){
                     Toast.makeText(this, R.string.campos_vacios, Toast.LENGTH_SHORT).show();
                 } else if(u != null){
-                    savePreferences(username, password);
-                    intent.putExtra("Uid", u.getUid());     // Desde esta Activity a la otra le paso el Id del usuario que se acaba de loguear
+                    savePreferences(username, password, u.getName());
                     startActivity(intent);
                     finish();
                 } else {
@@ -77,10 +78,11 @@ public class LoginActivity extends Activity implements View.OnClickListener{
         }
     }
 
-    private void savePreferences(String usrname, String pwd){
+    private void savePreferences(String usrname, String pwd, String name){
         SharedPreferences.Editor editor = pref.edit();
-        editor.putString("username",usrname);           // par clave,valor
-        editor.putString("password",pwd);               // par clave,valor
+        editor.putString("username", usrname);           // par clave,valor
+        editor.putString("password", pwd);               // par clave,valor
+        editor.putString("name", name);               // par clave,valor
         editor.commit();
     }
 

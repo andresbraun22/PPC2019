@@ -34,6 +34,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
+        android:textColor="#000000"
+        android:textStyle="bold"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
@@ -56,6 +58,7 @@
         android:layout_marginBottom="8dp"
         android:text="TextView"
         android:textSize="15sp"
+        android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
@@ -73,7 +76,7 @@
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:srcCompat="@drawable/person" />
+        app:srcCompat="@mipmap/ic_patient_l_blue" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline5"

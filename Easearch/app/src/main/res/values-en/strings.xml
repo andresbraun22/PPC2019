@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- APP -->
+    <string name="app_name">Easearch</string>
+
+    <!-- LOGIN -->
+    <string name="usuario">User</string>
+    <string name="contraseña">Password</string>
+    <string name="ingresar">LOGIN</string>
+    <string name="registrarse">REGISTER</string>
+    <string name="datos_incorrectos">Wrong data</string>
+    <string name="campos_vacios">Empty fields are not allowed</string>
+    <string name="login_ok">Login success!</string>
+
+    <!-- REGISTRATION -->
+    <string name="nombre">Name</string>
+    <string name="apellido">Surname</string>
+    <string name="repetirContraseña">Repeat password</string>
+    <string name="pw_no_coincide">Passwords do not match</string>
+    <string name="reg_ok">Register success!</string>
+    <string name="ya_reg">ERROR: user already register</string>
+    <string name="requerido">Required</string>
+
+    <!-- MENÚ -->
+    <string name="menu_ver_mapa">See my location</string>
+    <string name="menu_salir">Logout</string>
+    <string name="configuracion">Configuration</string>
+    <string name="menu_inicio">Home</string>
+    <string name="editarPerfil">Edit profile</string>
+    <string name="acerca">About</string>
+
+    <!-- PANEL -->
+    <string name="pacientes">PATIENTS</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hola">Hi</string>
+
+    <!-- ACERCA DE -->
+    <string name="tituloAcercaDe">About</string>
+    <string name="contenidoApp">• Easearch V1.1® 2021</string>
+    <string name="contenidoDeveloper">• Developed by Andrés Braun.</string>
+    <string name="aceptar">Ok</string>
+
+    <!-- PATIENT INFO -->
+    <string name="detalle_paciente">Patient detail</string>
+    <string name="descripcion">Description</string>
+    <string name="distancia">Distance</string>
+    <string name="domicilio">Address</string>
+    <string name="calculando_distancia">Calculated distance ...</string>
+    <string name="valor_domicilio">WebService address</string>
+    <string name="telefono">Phone</string>
+    <string name="valor_telefono">WebService phone</string>
+    <string name="detalle">Detail</string>
+    <string name="valor_deuda">WebService value</string>
+    <string name="valor">Value</string>
+    <string name="resume">RESUME</string>
+    <string name="pause">PAUSE</string>
+    <string name="valor_tipo">WebService type</string>
+    <string name="salir">Exit</string>
+    <string name="registrese">Register</string>
+
+</resources>

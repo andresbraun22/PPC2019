@@ -14,15 +14,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".controller.PatientInfo"
+            android:theme="@style/AppTheme2"
+            android:label="@string/detalle_paciente" />
         <activity android:name=".controller.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".controller.RegistrationActivity" />
-        <activity android:name=".controller.PanelActivity" />
-        <activity android:name=".controller.LoginActivity"/>
+        <activity
+            android:name=".controller.RegistrationActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/registrese" />
+        <activity
+            android:name=".controller.PanelActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".controller.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <meta-data
             android:name="com.google.android.gms.version"

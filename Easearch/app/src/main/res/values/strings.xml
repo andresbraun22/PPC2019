@@ -1,14 +1,62 @@
 <resources>
+
+    <!-- APP -->
     <string name="app_name">Easearch</string>
-    <string name="datos_incorrectos">ERROR: datos incorrectos</string>
-    <string name="pw_no_coincide">ERROR: las contraseñas no coinciden</string>
-    <string name="campos_vacios">ERROR: no se permiten campos vacíos</string>
+
+    <!-- LOGIN -->
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="datos_incorrectos">Datos incorrectos</string>
+    <string name="campos_vacios">No se permiten campos vacíos</string>
+    <string name="login_ok">Login exitoso!</string>
+
+    <!-- REGISTRATION -->
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="repetirContraseña">Repetir contraseña</string>
+    <string name="pw_no_coincide">Las contraseñas no coinciden</string>
     <string name="reg_ok">Registro exitoso!</string>
     <string name="ya_reg">ERROR: usuario ya registrado</string>
-    <string name="login_ok">Login exitoso!</string>
-    <string name="requerido">Required</string>
+    <string name="requerido">Requerido</string>
 
+    <!-- MENÚ -->
+    <string name="menu_ver_mapa">Ver mi ubicación</string>
+    <string name="menu_salir">Cerrar sesión</string>
+    <string name="configuracion">Configuración</string>
+    <string name="menu_inicio">Inicio</string>
+    <string name="editarPerfil">Editar perfil</string>
+    <string name="acerca">Acerca de</string>
+
+    <!-- PANEL -->
+    <string name="pacientes">PACIENTES</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hola">Hola</string>
+
+    <!-- ACERCA DE -->
+    <string name="tituloAcercaDe">Acerca de</string>
+    <string name="contenidoApp">• Easearch V1.1® 2021</string>
+    <string name="contenidoDeveloper">• Desarrollada por Andrés Braun.</string>
+    <string name="aceptar">Aceptar</string>
+
+    <!-- PATIENT INFO -->
+    <string name="detalle_paciente">Detalle de paciente</string>
+    <string name="descripcion">Descripción</string>
+    <string name="distancia">Distancia</string>
+    <string name="domicilio">Domicilio</string>
+    <string name="calculando_distancia">Calculando distancia ...</string>
+    <string name="valor_domicilio">WebService domicilio</string>
+    <string name="telefono">Teléfono</string>
+    <string name="valor_telefono">WebService telefono</string>
+    <string name="detalle">Detalle</string>
+    <string name="valor_deuda">WebService valor</string>
+    <string name="valor">Valor</string>
     <string name="resume">RESUME</string>
     <string name="pause">PAUSE</string>
+    <string name="valor_tipo">WebService tipo</string>
+    <string name="salir">Salir</string>
+    <string name="registrese">Regístrese</string>
 
 </resources>

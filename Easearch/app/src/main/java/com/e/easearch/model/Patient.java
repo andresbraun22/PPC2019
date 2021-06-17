@@ -2,7 +2,7 @@ package com.e.easearch.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Patient implements Comparable<Patient>{
+public class Patient {
 
     @SerializedName("descripcion")          // @SerializedName se utiliza para parsear los nombres de las claves JSON a los atributos
     private String apellidoYNombre;         // de la clase Java. Si no se pone @SerializedName, el nombre del atributo debe ser igual
@@ -29,13 +29,11 @@ public class Patient implements Comparable<Patient>{
     private float valorConsulta;
 
     @SerializedName("distancia")
-    private float distanciaUbicacion;
-
+    private Double distanciaUbicacion;
 
 
     public Patient() {
     }
-
 
 
     public String getApellidoYNombre() {
@@ -102,23 +100,12 @@ public class Patient implements Comparable<Patient>{
         this.valorConsulta = valorConsulta;
     }
 
-    public float getDistanciaUbicacion() {
+    public Double getDistanciaUbicacion() {
         return distanciaUbicacion;
     }
 
-    public void setDistanciaUbicacion(float distanciaUbicacion) {
+    public void setDistanciaUbicacion(Double distanciaUbicacion) {
         this.distanciaUbicacion = distanciaUbicacion;
     }
 
-
-    @Override
-    public int compareTo(Patient pat){
-        if (getDistanciaUbicacion() < pat.getDistanciaUbicacion()) {
-            return -1;
-        }
-        if (getDistanciaUbicacion() > pat.getDistanciaUbicacion()) {
-            return 1;
-        }
-        return 0;
-    }
 }

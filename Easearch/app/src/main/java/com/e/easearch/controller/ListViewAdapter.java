@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import com.e.easearch.R;
 import com.e.easearch.model.Patient;
+
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class ListViewAdapter extends BaseAdapter {
@@ -53,7 +55,17 @@ public class ListViewAdapter extends BaseAdapter {
         Patient p  = (Patient) getItem(i);
 
         tvTitulo.setText(p.getApellidoYNombre());
-        tvContenido.setText(String.valueOf(p.getDistanciaUbicacion()));
+
+        DecimalFormat dfKM = new DecimalFormat("###.#");
+        DecimalFormat dfMT = new DecimalFormat("###");
+        double distance = p.getDistanciaUbicacion();
+        String resultado;
+        if(distance >= 1000){
+            resultado = dfKM.format(distance/1000) + " Kms";
+        } else {
+            resultado = dfMT.format(distance) + " Mts";
+        }
+        tvContenido.setText(String.valueOf(resultado));
 
         return vista;
     }
